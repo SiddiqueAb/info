@@ -24,17 +24,17 @@
     <div id="particles-js">
         <!-- btn group -->
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
-            <a type="button" class="btn btn-info wow bounceInLeft" data-wow-duration="2s" data-toggle="modal" data-target="#about"><span class="text_btn">About</span></a>
-            <a type="button" class="btn btn-info wow bounceInDown" data-wow-duration="2s" data-toggle="modal" data-target="#education"><span class="text_btn">Education</span></a>
-            <a type="button" class="btn btn-info wow rollIn" data-wow-duration="2s" data-wow-iteration="10" data-toggle="modal" data-target="#skill"><span class="text_btn">Skill</span></a>
-            <a type="button" class="btn btn-info wow rollIn" data-wow-duration="2s" data-wow-iteration="10" data-toggle="modal" data-target="#photo"><span class="text_btn">Photo</span></a>
-            <a type="button" class="btn btn-info wow bounceInDown" data-wow-duration="2s" data-toggle="modal" data-target="#exampleModalLong"><span class="text_btn">Project</span></a>
-            <a type="button" class="btn btn-info wow bounceInRight" data-wow-duration="2s" data-toggle="modal" data-target="#exampleModalLong"><span class="text_btn">Extra</span></a>
+            <a type="button" class="btn btn-info btn-flat ml-2 wow bounceInLeft" data-wow-duration="2s" data-toggle="modal" data-target="#about"><span class="text_btn">About</span></a>
+            <a type="button" class="btn btn-info btn-flat ml-2 wow bounceInDown" data-wow-duration="2s" data-toggle="modal" data-target="#education"><span class="text_btn">Education</span></a>
+            <a type="button" class="btn btn-info btn-flat  ml-2 wow rollIn" data-wow-duration="2s" data-wow-iteration="10" data-toggle="modal" data-target="#skill"><span class="text_btn">Skill</span></a>
+            <a type="button" class="btn btn-info btn-flat  ml-2 wow rollIn" data-wow-duration="2s" data-wow-iteration="10" data-toggle="modal" data-target="#photo"><span class="text_btn">Photo</span></a>
+            <a type="button" class="btn btn-info btn-flat  ml-2 wow bounceInDown" data-wow-duration="2s" data-toggle="modal" data-target="#exampleModalLong"><span class="text_btn">Project</span></a>
+            <a type="button" class="btn btn-info btn-flat  ml-2 wow bounceInRight" data-wow-duration="2s" data-toggle="modal" data-target="#exampleModalLong"><span class="text_btn">Extra</span></a>
         </div>
     </div>
     <!-- Modal for ABout Section -->
     <div class="modal fade" id="photo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle">About Me</h5>
@@ -59,10 +59,10 @@
 
     <!-- Modal for Education Section -->
     <div class="modal wow rollIn" data-wow-duration="1s" id="education" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s" id="exampleModalLongTitle">EDUCATIONAL QUALIFICATION</h5>
+                <div class="modal-header bg-info">
+                    <h5 class="modal-title wow bounceInRight text-light" data-wow-duration="2s" data-wow-delay="1s" id="exampleModalLongTitle">EDUCATIONAL QUALIFICATION</h5>
                     <button type="button" onclick="closeModal()" class="close" data-dismiss="modal" aria-label="Close">
                         <span  aria-hidden="true">&times;</span>
                     </button>
@@ -107,15 +107,14 @@
                         </tbody>
                     </table>
                 </div>
-                <div class="modal-footer">
-                </div>
+
             </div>
         </div>
     </div>
 
     <!-- Modal for Skill Section -->
     <div class="modal wow rollIn rotateOut" data-wow-duration="1s" id="skill" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header bg-secondary text-light">
                     <h5 class="modal-title wow bounceInRight" data-wow-duration="2s" data-wow-delay="1s" id="exampleModalLongTitle">MY SKill</h5>
