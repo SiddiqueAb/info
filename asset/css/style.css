@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Barrio&family=Galada&family=Philosopher:wght@400;700&family=Sancreek&display=swap');
+body{
+	margin:0;
+	padding: 0;
+	height: 100vh;
+	overflow-x: hidden;
+
+    font: small-caption;
+
+}
+#particles-js{
+	height: 100%;
+	background: #10111b;
+	position: relative;
+}
+.btn-toolbar{
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.btn{
+	height: 80px;
+    width: 80px;
+    border-radius: 10% 60% 10% 60%;
+	box-shadow: 2px 2px 10px #609fff;
+	margin-right: 1rem;
+	text-align:center;
+	position: relative;
+}
+.btn-info{
+	background-color: #d0cabf;
+}
+.text_btn{
+	position: absolute;
+	font-size: 1rem;
+	top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.modal{
+
+}
