@@ -63,12 +63,46 @@ a:hover {
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
+.active {
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+        0 0 25px #03e9f4,
+        0 0 50px #03e9f4,
+        0 0 200px #03e9f4;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+}
+
 a:nth-child(1) {
     filter: hue-rotate(270deg);
 }
 
 a:nth-child(2) {
     filter: hue-rotate(110deg);
+}
+
+a:nth-child(3) {
+    filter: hue-rotate(430deg);
+}
+
+a:nth-child(4) {
+    filter: hue-rotate(590deg);
+}
+
+a:nth-child(5) {
+    filter: hue-rotate(750deg);
+}
+
+a:nth-child(6) {
+    filter: hue-rotate(910deg);
+}
+
+a:nth-child(7) {
+    filter: hue-rotate(1070deg);
+}
+
+a:nth-child(8) {
+    filter: hue-rotate(1230deg);
 }
 
 a span {
