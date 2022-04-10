@@ -422,13 +422,13 @@ p {
 
 .happy-pick::before {
     margin-right: 10px;
-    content: '\f0a8';
+    content: '<';
     /* fa-arrow-circle-left */
 }
 
 .lovers-pick::after {
     margin-left: 10px;
-    content: '\f0a9';
+    content: '>';
     /* fa-arrow-circle-right */
 }
 
