@@ -17,5 +17,8 @@ function dynamic_append(page_name) {
 		$(this).removeClass('active');
 	});
 	$('a#' + page_name).addClass('active');
+	if (page_name == "photo_gallery") {
+		// $("#block").css({"font-size": "200%"})
+	}
 
 }
