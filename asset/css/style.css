@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Barrio&family=Galada&family=Philosopher:wght@400;700&family=Sancreek&display=swap');
-
 body {
     margin: 0;
     padding: 0;
@@ -34,7 +33,6 @@ a {
     overflow: hidden;
     /* margin-right: 50px; */
     margin-left: 20px;
-
 }
 
 .content_box {
@@ -50,26 +48,19 @@ a {
     overflow: hidden;
     margin-right: 50px;
     margin-left: 20px;
-
 }
 
 a:hover {
     background: #03e9f4;
     color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-        0 0 25px #03e9f4,
-        0 0 50px #03e9f4,
-        0 0 200px #03e9f4;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
 .active {
     background: #03e9f4;
     color: #050801;
-    box-shadow: 0 0 5px #03e9f4,
-        0 0 25px #03e9f4,
-        0 0 50px #03e9f4,
-        0 0 200px #03e9f4;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 200px #03e9f4;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
 }
 
@@ -123,7 +114,6 @@ a span:nth-child(1) {
     0% {
         left: -100%;
     }
-
     50%,
     100% {
         left: 100%;
@@ -144,7 +134,6 @@ a span:nth-child(2) {
     0% {
         top: -100%;
     }
-
     50%,
     100% {
         top: 100%;
@@ -165,13 +154,11 @@ a span:nth-child(3) {
     0% {
         right: -100%;
     }
-
     50%,
     100% {
         right: 100%;
     }
 }
-
 
 a span:nth-child(4) {
     bottom: -100%;
@@ -187,12 +174,12 @@ a span:nth-child(4) {
     0% {
         bottom: -100%;
     }
-
     50%,
     100% {
         bottom: 100%;
     }
 }
+
 
 /* body {
 	margin: 0;
@@ -214,8 +201,7 @@ a span:nth-child(4) {
     position: absolute;
     left: -2px;
     top: -2px;
-    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094,
-            #0000ff, #00ff00, #ffff00, #ff0000);
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000, #fb0094, #0000ff, #00ff00, #ffff00, #ff0000);
     background-size: 400%;
     width: calc(100% + 4px);
     height: calc(100% + 4px);
@@ -227,11 +213,9 @@ a span:nth-child(4) {
     0% {
         background-position: 0 0;
     }
-
     50% {
         background-position: 400% 0;
     }
-
     100% {
         background-position: 0 0;
     }
@@ -247,15 +231,14 @@ a span:nth-child(4) {
 }
 
 
-
-
-
 /* about page design  */
+
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
+
 
 /* html, body {
     height: 100%;
@@ -273,7 +256,9 @@ a span:nth-child(4) {
     overflow-x: hidden;
   } */
 
+
 /* hide radio buttons, but still expose them to screen readers */
+
 input {
     position: absolute;
     width: 1px;
@@ -284,12 +269,12 @@ input {
 
 .selector {
     display: grid;
-    grid-template-areas:
-        'happy lovers'
-        'pick  pick';
+    grid-template-areas: 'happy lovers' 'pick  pick';
 }
 
+
 /* the cards and toggle buttons are actually fat labels that can be clicked to set radio buttons */
+
 label {
     display: block;
     cursor: pointer;
@@ -312,7 +297,6 @@ label {
     grid-area: happy;
     margin-right: -10px;
     /* nudge closer to lover's card */
-
     /* these values are used to animate via translateX */
     --swing: -25px;
     --overlap: 25px;
@@ -322,13 +306,14 @@ label {
     grid-area: lovers;
     margin-left: -10px;
     /* nudge closer to happy card */
-
     /* these values are used to animate via translateX */
     --swing: 25px;
     --overlap: -25px;
 }
 
+
 /* when a radio button is set, swing the corresponding card fowards */
+
 #happy-radio:checked~.selector .happy-card,
 #lovers-radio:checked~.selector .lovers-card {
     animation-name: swing-forwards;
@@ -340,11 +325,9 @@ label {
         /* start behind other card */
         transform: scale(0.9);
     }
-
     50% {
         transform: translateX(var(--swing));
     }
-
     100% {
         z-index: 2;
         /* end in front of other card */
@@ -352,7 +335,9 @@ label {
     }
 }
 
+
 /* when a radio button is set, swing the opposite card backwards */
+
 #happy-radio:checked~.selector .lovers-card,
 #lovers-radio:checked~.selector .happy-card {
     animation-name: swing-backwards;
@@ -364,11 +349,9 @@ label {
         /* start in front of other card */
         transform: translateX(var(--overlap)) scale(1.1);
     }
-
     50% {
         transform: translateX(var(--swing));
     }
-
     100% {
         z-index: 1;
         /* end behind other card */
@@ -410,7 +393,6 @@ p {
     -webkit-user-select: none;
     user-select: none;
     color: #fff;
-
 }
 
 .happy-pick::before,
@@ -432,30 +414,38 @@ p {
     /* fa-arrow-circle-right */
 }
 
+
 /* hide happy toggle button if happy is currently selected */
+
 #happy-radio:checked~.selector .happy-pick {
     display: none;
 }
 
+
 /* hide lover's toggle button if lover's is currently selected */
+
 #lovers-radio:checked~.selector .lovers-pick {
     display: none;
 }
 
+
 /* increase overlap and swing distance on smaller screens */
+
 @media (max-width: 560px) {
     .happy-card {
         margin-right: -85px;
         --swing: -100px;
     }
-
     .lovers-card {
         margin-left: -85px;
         --swing: 100px;
     }
 }
 
+
 /* photo gallery  */
+
+
 /* HTML, BODY {
     height: 100%;
     font-size: 16px;
@@ -505,4 +495,69 @@ IMG:nth-child(7n+1) {
 IMG:hover {
     z-index: 2;
     transform: scale(2);
+}
+
+.paper {
+    position: relative;
+    /* width: 90%; */
+    max-width: 800px;
+    min-width: 400px;
+    height: 480px;
+    margin: 0 auto;
+    background: #fafafa;
+    /* border-radius: 10px; */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+.paper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    background: radial-gradient(#575450 6px, transparent 7px) repeat-y;
+    background-size: 30px 30px;
+    border-right: 3px solid #D44147;
+    box-sizing: border-box;
+}
+
+.paper-content {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    bottom: 30px;
+    left: 60px;
+    background: linear-gradient(transparent, transparent 28px, #91D1D3 28px);
+    background-size: 30px 30px;
+}
+
+.paper-content textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    line-height: 30px;
+    padding: 0 10px;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: mediumblue;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: rgba(0, 0, 0, .6);
+}
+
+footer a {
+    color: rgba(255, 255, 255, .8);
 }
